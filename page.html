@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визаж и Прически</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5e6d3;
+        }
+        header {
+            background: url('header-image.jpg') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d4af37;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #d4af37;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #b28f2f;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            color: #b28f2f;
+        }
+        .portfolio img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #d4af37;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Визаж и Прически от Юлии</div>
+    </header>
+    <nav>
+        <a href="#about">Обо мне</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+    <div class="container" id="about">
+        <h2>Обо мне</h2>
+        <p>Я профессиональный визажист и мастер причесок с многолетним опытом. Создаю образы для особых событий и фотосессий.</p>
+    </div>
+    <div class="container" id="services">
+        <h2>Услуги</h2>
+        <ul>
+            <li>Свадебный макияж</li>
+            <li>Вечерний макияж</li>
+            <li>Дневной макияж</li>
+            <li>Прически на любое событие</li>
+        </ul>
+    </div>
+    <div class="container portfolio" id="portfolio">
+        <h2>Портфолио</h2>
+        <img src="portfolio1.jpg" alt="Работа 1">
+        <img src="portfolio2.jpg" alt="Работа 2">
+    </div>
+    <div class="container" id="contact">
+        <h2>Контакты</h2>
+        <p>Телефон: +7 999 123 45 67</p>
+        <p>Email: example@email.com</p>
+    </div>
+    <footer>
+        &copy; 2025 Визаж и Прически от Юлии | Все права защищены
+    </footer>
+</body>
+</html>
