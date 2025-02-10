@@ -21,6 +21,19 @@
             text-align: center;
             font-size: 2em;
             font-weight: bold;
+            position: relative;
+        }
+        .rotating-image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 80px;
+            height: 80px;
+            animation: spin 4s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
         nav {
             display: flex;
@@ -47,11 +60,6 @@
         h2 {
             color: #b28f2f;
         }
-        .portfolio img {
-            width: 100%;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
         footer {
             text-align: center;
             padding: 20px;
@@ -64,11 +72,12 @@
 <body>
     <header>
         <div>Визаж и Прически от Юлии</div>
+        <img src="makeup-brushes.png" alt="Вращающиеся кисти" class="rotating-image">
     </header>
     <nav>
         <a href="#about">Обо мне</a>
         <a href="#services">Услуги</a>
-        <a href="#portfolio">Портфолио</a>
+        <a href="#price-list">Прайс-лист</a>
         <a href="#contact">Контакты</a>
     </nav>
     <div class="container" id="about">
@@ -78,16 +87,20 @@
     <div class="container" id="services">
         <h2>Услуги</h2>
         <ul>
-            <li>Свадебный макияж</li>
-            <li>Вечерний макияж</li>
-            <li>Дневной макияж</li>
-            <li>Прически на любое событие</li>
+            <li><a href="wedding-makeup.html">Свадебный макияж</a></li>
+            <li><a href="evening-makeup.html">Вечерний макияж</a></li>
+            <li><a href="day-makeup.html">Дневной макияж</a></li>
+            <li><a href="hairstyles.html">Прически на любое событие</a></li>
         </ul>
     </div>
-    <div class="container portfolio" id="portfolio">
-        <h2>Портфолио</h2>
-        <img src="portfolio1.jpg" alt="Работа 1">
-        <img src="portfolio2.jpg" alt="Работа 2">
+    <div class="container" id="price-list">
+        <h2>Прайс-лист</h2>
+        <ul>
+            <li>Свадебный макияж - 5000 руб.</li>
+            <li>Вечерний макияж - 3500 руб.</li>
+            <li>Дневной макияж - 2500 руб.</li>
+            <li>Прическа - от 3000 руб.</li>
+        </ul>
     </div>
     <div class="container" id="contact">
         <h2>Контакты</h2>
@@ -96,6 +109,10 @@
     </div>
     <footer>
         &copy; 2025 Визаж и Прически от Юлии | Все права защищены
+    </footer>
+</body>
+</html>
+
     </footer>
 </body>
 </html>
